@@ -26,15 +26,16 @@ tf.compat.v1.disable_eager_execution()
 # SETTINGS
 
 # to start training from scratch:
-load_checkpoint = False
-checkpoint_path = "data/checkpoint02"
-train_episodes = float("inf")
-save_freq_episodes = 400
+# load_checkpoint = False
+# checkpoint_path = "data/checkpoint02"
+# train_episodes = float("inf")
 
 # To play from existing checkpoint without any training:
-# load_checkpoint = True
-# checkpoint_path = "data/checkpoint01"
-# train_episodes = 0 #or just give higher value to train the existing checkpoint more
+load_checkpoint = True
+checkpoint_path = "data/checkpoint01"
+train_episodes = 0 #or just give higher value to train the existing checkpoint more
+
+save_freq_episodes = 400
 
 model_config = dict(
     min_epsilon=0.1,
